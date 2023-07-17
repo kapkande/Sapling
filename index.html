@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapling</title>
+     <script src="https://sapling.ai/static/js/sapling-sdk-v1.0.5.min.js"></script>
+</head>
+
+<body>
+    <div class="input" contenteditable="true" id="check-space" sapling-ignore="true"></div>
+    <input type="text" name="" id="">
+    <script type="text/javascript">
+        Sapling.init({
+            key: '<API_KEY>',
+            mode: 'dev',
+        });
+
+        const contentEditable = document.getElementById('check-space');
+        Sapling.observe(contentEditable);
+    </script>
+</body>
+
+</html>
